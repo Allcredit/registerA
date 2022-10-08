@@ -15,7 +15,7 @@
 <style>
 body{
   font-family: 'Prompt', sans-serif;
-  background-image: linear-gradient(0deg,#03544a, #01ffe1);
+  background-image: linear-gradient(0deg,#28103C, #663399);
   background-size: auto;
   color: rgb(0, 0, 0);
   display: flex;
@@ -38,14 +38,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background-image: linear-gradient(180deg, #ffc200, #ff8200);
   border-radius: 10px;
 }
 .botton1{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background-image: linear-gradient(180deg, #ff0000, #510202);
   border-radius: 10px;
   margin: 10px;
 }
@@ -61,25 +61,24 @@ body{
   </span>
 </div>
 </nav>
-<p style="color: #ff0000; text-align: center;">***ข้อมูลต้องเป็นข้อมูลจริงเท่านั้น***</p>
 
-<form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="contact"> 
+<form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="hello"> 
     <div class="mb-3">
 <label for="name1" class="form-label"><i class="fas fa-user-edit"></i> ชื่อ</label>
-<input type="text" class="form-control" name="ชื่อ" placeholder=" ชื่อ " required>
+<input type="text" class="form-control" name="name1" placeholder=" ชื่อ " required>
 </div>
 <div class="mb-3">
 <label for="name2" class="form-label"><i class="fas fa-user-plus"></i> นามสกุล</label>
-<input type="text" class="form-control" name="นามสกุล" placeholder=" นามสกุล " required>
+<input type="text" class="form-control" name="name2" placeholder=" นามสกุล " required>
 </div>
 <div class="mb-3">
 <label for="name3" class="form-label"><i class="fas fa-mobile-alt"></i> เบอร์โทร</label>
-<input type="tel" id="phone" name="เบอร์โทร" placeholder="08x-xxxxx" pattern="[0]{1}[1-9]{1}[0-9]{8}" required>
+<input type="tel" id="phone" name="name3" placeholder="08xxxxxx" pattern="[0]{1}[1-9]{1}[0-9]{8}" required>
 
 </div>
 <div class="mb-3">
 <label for="name1" class="form-label"><i class="fas fa-university"></i> ธนาคาร</label>
- <select name="ธนาคาร"class="form-select" aria-label="Default select example" required>
+ <select name="name4"class="form-select" aria-label="Default select example" required>
 <option selected disabled value=""> เลือกธนาคาร</option>
 <option data-v-0485496f="" value="KBANK"> ธนาคารกสิกรไทย </option>
 <option data-v-0485496f="" value="KTB"> ธนาคารกรุงไทย </option>
@@ -108,20 +107,19 @@ body{
 
 <div class="mb-3">
 <label for="name5" class="form-label"><i class="fas fa-money-check"></i> เลขที่บัญชี</label>
-<input type="text" class="form-control" name="เลขที่บัญชี" placeholder=" 9876543210 " required>
+<input type="text" class="form-control" name="name5" placeholder=" 9876543210 " required>
 </div>
-<p style="color: #ff0000; text-align: center;">***กรอกข้อมูลเสร็จแล้วกดลงทะเบียน รอ 1-3 วิ***</p>
 <div class="botton">
-<button type="submit" class="btn btn-primary btn-lg btn-block" style="color: rgb(255, 255, 255);"><i class="fas fa-save"></i>ลงทะเบียน</button>
+<button type="submit" class="btn btn-lg" style="color: rgb(255, 255, 255);"><i class="fas fa-save"></i>ลงทะเบียน</button>
 </div>
 <div class="botton1">
-  <button type="button" id="send" class="btn btn-secondary btn-lg btn-block" style="color: rgb(255, 255, 255);">ยืนยันรับเครดิตฟรี</button>
+  <button type="button" id="send" class="btn btn-lg" style="color: rgb(255, 255, 255);">ยืนยันรับเครดิตฟรี</button>
   </div>
 
   </form>
 <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzrveG5btlNYB-ZHrm2SKIyhVraZ4O3NH2qcQ90_JzEIGPGTWWqZFOy_0-QjL2631Tz_g/exec'
-            const form = document.forms['autovip']
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxSEToxLkJL1OzcvNsI44JNPgaLU2oGnBUtoVYnebBmY21NDR808eqKYQ_eYe-g40hU/exec'
+            const form = document.forms['hello']
           
             form.addEventListener('submit', e => {
               e.preventDefault()
@@ -173,9 +171,10 @@ body{
       </div>
     </main>
   </div>
-  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="https://static.line-scdn.net/liff/edge/2/non-ios-extensions.js" type="text/javascript"></script>
-        
+
+         <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+         <script src="https://static.line-scdn.net/liff/edge/2/non-ios-extensions.js" type="text/javascript"></script>
+         
 </body></html>
